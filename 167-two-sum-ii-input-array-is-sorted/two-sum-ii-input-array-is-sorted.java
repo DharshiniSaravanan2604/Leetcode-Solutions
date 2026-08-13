@@ -7,12 +7,11 @@ class Solution {
             int sum = numbers[left] + numbers[right];
 
             if (sum == target) {
-                // Return 1-based indices as required
                 return new int[]{left + 1, right + 1};
             } else if (sum < target) {
-                left++;  // Sum is too small, move left pointer to increase sum
+                left++;
             } else {
-                right--; // Sum is too large, move right pointer to decrease sum
+                right--;
             }
         }
 
